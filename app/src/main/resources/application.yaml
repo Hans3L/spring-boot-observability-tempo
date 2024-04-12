@@ -19,14 +19,17 @@ logging:
 
 spring:
   datasource:
+    #url: jdbc:postgresql://localhost:5432/postgres
     url: jdbc:postgresql://postgres:5432/postgres
     username: postgres
     password: postgres
+    #password: admin
   jpa:
     hibernate:
       ddl-auto: update
   cache:
     type: redis
   redis:
+    #host: 127.0.0.1
     host: redis
     port: 6379
